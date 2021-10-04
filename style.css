@@ -1,0 +1,27 @@
+html {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.animate {
+  white-space: pre;
+  display: inline-block;
+  opacity: 0;
+  animation: ani_kf 0.6s forwards cubic-bezier(0.34, 0.37, 0.85, 1.28);
+}
+
+@keyframes ani_kf {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
